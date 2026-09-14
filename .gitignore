@@ -12,6 +12,7 @@ coverage/
 
 # Local editor / OS files
 .DS_Store
+.npmrc
 *.py[cod]
 __pycache__/
 .pytest_cache/

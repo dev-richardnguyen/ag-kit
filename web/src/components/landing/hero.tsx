@@ -59,7 +59,7 @@ export function LandingHero() {
             </div>
             <pre className="overflow-x-auto p-5 font-mono text-sm leading-relaxed text-code-foreground md:p-6 md:text-[15px]">
               <code>
-                <span className="text-brand">$</span> npx @dev-richardnguyen/ag-kit init
+                <span className="text-brand">$</span> npx @camilyos/ag-kit init
                 {"\n"}
                 <span className="text-muted-foreground">
                   ✓ Downloaded toolkit

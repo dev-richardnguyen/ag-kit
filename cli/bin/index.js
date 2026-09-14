@@ -61,7 +61,7 @@ const checkUpdate = async (quiet = false) => {
     try {
         const controller = new AbortController();
         const timeoutId = setTimeout(() => controller.abort(), 1500);
-        const response = await fetch("https://registry.npmjs.org/@dev-richardnguyen/ag-kit/latest", {
+        const response = await fetch("https://registry.npmjs.org/@camilyos/ag-kit/latest", {
             signal: controller.signal,
         });
         clearTimeout(timeoutId);
@@ -79,7 +79,7 @@ const showUpdateNotification = (latestVersion) => {
         chalk.yellow(`
   ┌────────────────────────────────────────────────────────┐
   │  Update available: ${chalk.red(pkg.version)} → ${chalk.green(latestVersion)}
-  │  Run: ${chalk.cyan("npm install -g @dev-richardnguyen/ag-kit")}
+  │  Run: ${chalk.cyan("npm install -g @camilyos/ag-kit")}
   └────────────────────────────────────────────────────────┘
   `),
     );

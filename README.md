@@ -48,13 +48,13 @@ The published CLI currently supports Node.js 18 or newer; the Antigravity integr
 ### Install into a project
 
 ```bash
-npx @dev-richardnguyen/ag-kit init
+npx @camilyos/ag-kit init
 ```
 
 Or install the CLI globally:
 
 ```bash
-npm install -g @dev-richardnguyen/ag-kit
+npm install -g @camilyos/ag-kit
 ag-kit init
 ```
 

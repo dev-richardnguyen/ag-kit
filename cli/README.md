@@ -5,13 +5,13 @@ CLI for installing and safely updating [AG Kit](https://github.com/dev-richardng
 ## Installation
 
 ```bash
-npx @dev-richardnguyen/ag-kit init
+npx @camilyos/ag-kit init
 ```
 
 Or install globally:
 
 ```bash
-npm install -g @dev-richardnguyen/ag-kit
+npm install -g @camilyos/ag-kit
 ag-kit init
 ```
 

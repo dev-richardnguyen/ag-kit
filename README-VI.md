@@ -48,13 +48,13 @@ CLI được publish hiện hỗ trợ Node.js 18 trở lên; bộ kiểm tra An
 ### Cài vào dự án
 
 ```bash
-npx @dev-richardnguyen/ag-kit init
+npx @camilyos/ag-kit init
 ```
 
 Hoặc cài CLI toàn cục:
 
 ```bash
-npm install -g @dev-richardnguyen/ag-kit
+npm install -g @camilyos/ag-kit
 ag-kit init
 ```
 

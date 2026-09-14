@@ -1,5 +1,5 @@
 {
-  "name": "@dev-richardnguyen/ag-kit",
+  "name": "@camilyos/ag-kit",
   "version": "2026.8.31",
   "description": "CLI tool to install Antigravity Kit - AI Agent templates",
   "main": "bin/index.js",
@@ -17,6 +17,9 @@
     "bin",
     "lib"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/dev-richardnguyen/ag-kit.git"

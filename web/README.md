@@ -41,7 +41,7 @@ The `web/` directory contains the official online documentation site and interac
 
 ## 📦 What gets installed by the CLI
 
-When downstream developers run `npx @dev-richardnguyen/ag-kit init`, they install a `.agents/` folder at their project root:
+When downstream developers run `npx @camilyos/ag-kit init`, they install a `.agents/` folder at their project root:
 
 | Directory | Count | Description |
 | :--- | :--- | :--- |
