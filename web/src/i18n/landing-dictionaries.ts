@@ -330,7 +330,7 @@ export const landingEn: LandingDictionary = {
         value: "install",
         question: "How do I install it?",
         answer:
-          "Run npx @vudovn/ag-kit init in your project (or install the CLI globally). It downloads the toolkit into .agents and writes a managed-file manifest.",
+          "Run npx @dev-richardnguyen/ag-kit init in your project (or install the CLI globally). It downloads the toolkit into .agents and writes a managed-file manifest.",
       },
       {
         value: "update",
@@ -606,7 +606,7 @@ export const landingVi: LandingDictionary = {
         value: "install",
         question: "Cài đặt thế nào?",
         answer:
-          "Chạy npx @vudovn/ag-kit init trong dự án (hoặc cài CLI toàn cục). Toolkit được tải vào .agents và ghi managed-file manifest.",
+          "Chạy npx @dev-richardnguyen/ag-kit init trong dự án (hoặc cài CLI toàn cục). Toolkit được tải vào .agents và ghi managed-file manifest.",
       },
       {
         value: "update",
@@ -824,7 +824,7 @@ export const landingZh: LandingDictionary = {
         value: "install",
         question: "如何安装？",
         answer:
-          "在项目中运行 npx @vudovn/ag-kit init（或全局安装 CLI）。它会把工具包下载到 .agents 并写入托管文件清单。",
+          "在项目中运行 npx @dev-richardnguyen/ag-kit init（或全局安装 CLI）。它会把工具包下载到 .agents 并写入托管文件清单。",
       },
       {
         value: "update",
@@ -1047,7 +1047,7 @@ export const landingJa: LandingDictionary = {
         value: "install",
         question: "インストール方法は？",
         answer:
-          "プロジェクトで npx @vudovn/ag-kit init を実行します（CLI のグローバルインストールも可）。ツールキットが .agents にダウンロードされ、管理ファイルのマニフェストが書き込まれます。",
+          "プロジェクトで npx @dev-richardnguyen/ag-kit init を実行します（CLI のグローバルインストールも可）。ツールキットが .agents にダウンロードされ、管理ファイルのマニフェストが書き込まれます。",
       },
       {
         value: "update",

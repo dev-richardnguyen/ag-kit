@@ -1,17 +1,17 @@
 # AG Kit CLI
 
-CLI for installing and safely updating [AG Kit](https://github.com/vudovn/ag-kit), a collection of agents, skills, workflows, rules, memory conventions, and validation tools for Google Antigravity.
+CLI for installing and safely updating [AG Kit](https://github.com/dev-richardnguyen/ag-kit), a collection of agents, skills, workflows, rules, memory conventions, and validation tools for Google Antigravity.
 
 ## Installation
 
 ```bash
-npx @vudovn/ag-kit init
+npx @dev-richardnguyen/ag-kit init
 ```
 
 Or install globally:
 
 ```bash
-npm install -g @vudovn/ag-kit
+npm install -g @dev-richardnguyen/ag-kit
 ag-kit init
 ```
 

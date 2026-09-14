@@ -4,11 +4,11 @@
   "description": "Antigravity-first AI agent engineering kit with rules, skills, workflows, orchestration, MCP guidance, and safety hooks",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vudovn/ag-kit.git"
+    "url": "git+ssh://git@github.com/dev-richardnguyen/ag-kit.git"
   },
-  "homepage": "https://github.com/vudovn/ag-kit#readme",
+  "homepage": "https://github.com/dev-richardnguyen/ag-kit#readme",
   "bugs": {
-    "url": "https://github.com/vudovn/ag-kit/issues"
+    "url": "https://github.com/dev-richardnguyen/ag-kit/issues"
   },
   "keywords": [
     "ag-kit",
@@ -19,7 +19,7 @@
     "skills",
     "workflows"
   ],
-  "author": "vudovn",
+  "author": "Richard Nguyen <dev.richard.nguyen@gmail.com>",
   "license": "MIT",
   "private": true,
   "engines": {

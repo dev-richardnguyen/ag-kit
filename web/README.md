@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/vudovn/ag-kit/main/web/public/images/logo.png" width="128" height="128" alt="AGKIT">
+  <img src="public/images/logo.png" width="128" height="128" alt="AGKIT">
 </p>
 
 <h1 align="center">AG Kit - Web Application</h1>
@@ -41,7 +41,7 @@ The `web/` directory contains the official online documentation site and interac
 
 ## 📦 What gets installed by the CLI
 
-When downstream developers run `npx @vudovn/ag-kit init`, they install a `.agents/` folder at their project root:
+When downstream developers run `npx @dev-richardnguyen/ag-kit init`, they install a `.agents/` folder at their project root:
 
 | Directory | Count | Description |
 | :--- | :--- | :--- |
@@ -54,21 +54,10 @@ When downstream developers run `npx @vudovn/ag-kit init`, they install a `.agent
 ## 📚 Online Documentation
 
 *   **[Official Documentation Portal](https://ag-kit.unikorn.vn/docs)**
-*   **[GitHub Repository](https://github.com/vudovn/ag-kit)**
-
----
-
-## ☕ Support the Project
-
-If AG Kit has made your AI programming sessions more productive, consider supporting the project:
-
-<a href="https://buymeacoffee.com/vudovn" target="_blank"><img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me a Coffee" /></a>
-
-**Vietnamese Bank (MBBank QR):**<br/>
-<img src="https://img.vietqr.io/image/mbbank-0779440918-compact.jpg" alt="Donate QR" width="140" style="border-radius: 8px; margin-top: 10px;" />
+*   **[GitHub Repository](https://github.com/dev-richardnguyen/ag-kit)**
 
 ---
 
 ## 📄 License
 
-Released under the [MIT License](LICENSE) © [Vudovn](https://github.com/vudovn).
+Released under the [MIT License](LICENSE) © [Richard Nguyen](https://github.com/dev-richardnguyen).

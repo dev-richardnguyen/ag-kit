@@ -31,7 +31,7 @@
         "summary": "Patch release: the CLI no longer exits silently when run through an npm bin symlink (global install or npx).",
         "changes": {
             "Fixed": [
-                "CLI exited silently when invoked through an npm bin symlink (npx @vudovn/ag-kit init installed nothing): the entry path is now realpath-resolved before the direct-run guard comparison."
+                "CLI exited silently when invoked through an npm bin symlink (npx @dev-richardnguyen/ag-kit init installed nothing): the entry path is now realpath-resolved before the direct-run guard comparison."
             ],
             "Added": [
                 "Regression test running the CLI through a bin-style symlink."
@@ -88,7 +88,7 @@
                 "Sponsored section featuring Unikorn and become-a-sponsor CTAs.",
                 "Contribute section that loads live GitHub contributors (avatar, login, commit count).",
                 "Live GitHub star count on the hero CTA, with a shared 60s cache and compact labels (for example 7.8k).",
-                "X profile link (@vudovn354) on the landing header next to GitHub."
+                "X profile link (@dev-richardnguyen) on the landing header next to GitHub."
             ],
             "Changed": [
                 "Replaced the minimal home page (logo and two buttons) with a full product marketing experience.",

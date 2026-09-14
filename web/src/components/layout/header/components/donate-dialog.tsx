@@ -25,7 +25,7 @@ export default function DonateDialog({ className }: DonateDialogProps) {
                         <span>Fuel the Developer</span>
                     </DialogTitle>
                     <DialogDescription className="space-y-2 pt-2">
-                        Hi! I&apos;m <strong>Vu</strong>. I&apos;m dedicating my full-time work to building this kit. <br />
+                        Hi! I&apos;m <strong>Richard Nguyen</strong>. I&apos;m dedicating my work to building this kit. <br />
                         Your support helps me keep shipping and maintaining it. If you find this tool helpful, please consider buying me a coffee.
                     </DialogDescription>
                 </DialogHeader>
@@ -33,7 +33,7 @@ export default function DonateDialog({ className }: DonateDialogProps) {
                 <div className="space-y-3 p-4">
                     {/* Buy Me a Coffee */}
                     <a
-                        href="https://buymeacoffee.com/vudovn"
+                        href="https://buymeacoffee.com/dev_richardnguyen"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-3 p-4 rounded-lg border border-border hover:border-border hover:bg-muted transition-all group"

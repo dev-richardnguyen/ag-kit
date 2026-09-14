@@ -32,7 +32,7 @@ export default function InstallationContent() {
         </p>
 
         <pre className="p-4 rounded-lg bg-code overflow-x-auto mb-4 text-sm font-mono text-code-foreground">
-          npx @vudovn/ag-kit init
+          npx @dev-richardnguyen/ag-kit init
         </pre>
 
         <Callout type="info">
@@ -49,7 +49,7 @@ export default function InstallationContent() {
         </p>
 
         <pre className="p-4 rounded-lg bg-code overflow-x-auto mb-2 text-sm font-mono text-code-foreground">
-          npm install -g @vudovn/ag-kit
+          npm install -g @dev-richardnguyen/ag-kit
         </pre>
 
         <pre className="p-4 rounded-lg bg-code overflow-x-auto mb-4 text-sm font-mono text-code-foreground">

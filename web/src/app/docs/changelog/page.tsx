@@ -80,7 +80,7 @@ export default function ChangelogPage() {
             {/* Footer link */}
             <div className="mt-12 pt-8 border-t border-border">
                 <a
-                    href="https://github.com/vudovn/ag-kit/releases"
+                    href="https://github.com/dev-richardnguyen/ag-kit/releases"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-sm text-muted-foreground hover:text-foreground underline underline-offset-4"

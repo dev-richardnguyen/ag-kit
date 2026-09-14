@@ -223,19 +223,57 @@ useEffect(() => {
 // └── Image caching without limits
 ```
 
+### High-Performance Image Handling with expo-image
+
+```javascript
+// ❌ Outdated stock <Image> component
+// - No automatic disk caching
+// - Heavy main-thread image decoding causing scroll stutter
+import { Image } from 'react-native';
+<Image source={{ uri: item.avatarUrl }} style={styles.avatar} />
+
+// ✅ Use expo-image (Built on Glide / SDWebImage)
+import { Image } from 'expo-image';
+
+<Image
+  source={{ uri: item.avatarUrl }}
+  placeholder={{ blurhash: 'LEHLh[WB2yk8pyoJadR*.7kCMdnj' }}
+  contentFit="cover"
+  transition={200}
+  cachePolicy="memory-disk"
+  priority="high"
+  style={styles.avatar}
+/>
+```
+
+### React Native New Architecture (Bridgeless + Fabric + TurboModules)
+
+```markdown
+## New Architecture Guidelines (RN 0.76+)
+- **Bridgeless Mode Enabled**: No asynchronous JSON-bridge bottleneck. Direct C++ JSI communication.
+- **Fabric Renderer**: Synchronous UI measurement and layout mounting. Prevents layout jump/flicker.
+- **Native Modules**: Use TurboModules with Codegen specs (`specs/NativeX.ts`) instead of legacy bridge methods.
+- **Safe Area Insets**: Use `useSafeAreaInsets()` from `react-native-safe-area-context` to safely handle edge-to-edge screens, notches, and Dynamic Island.
+```
+
 ### React Native Performance Checklist
 
 ```markdown
 ## Before Every List
-- [ ] Using FlatList or FlashList (NOT ScrollView)
+- [ ] Using FlashList (preferred) or FlatList (NOT ScrollView)
 - [ ] renderItem is useCallback memoized
 - [ ] List items are React.memo wrapped
 - [ ] keyExtractor uses stable ID (NOT index)
-- [ ] getItemLayout provided (if fixed height)
+- [ ] getItemLayout provided (if fixed height with FlatList)
+
+## Before Every Image
+- [ ] Using `expo-image` instead of stock `<Image>`
+- [ ] `cachePolicy` configured (`memory-disk` for persistent cache)
+- [ ] Placeholder (blurhash/thumb) provided to avoid layout shifts
 
 ## Before Every Animation
-- [ ] useNativeDriver: true (if possible)
-- [ ] Using Reanimated for complex animations
+- [ ] useNativeDriver: true (if using Animated)
+- [ ] Using Reanimated 3 (worklets running on UI thread) for gestures & complex motion
 - [ ] Only animating transform/opacity
 - [ ] Tested on low-end Android device
 

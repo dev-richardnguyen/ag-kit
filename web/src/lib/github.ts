@@ -1,4 +1,4 @@
-export const GITHUB_REPO = "vudovn/ag-kit";
+export const GITHUB_REPO = "dev-richardnguyen/ag-kit";
 export const GITHUB_REPO_URL = `https://github.com/${GITHUB_REPO}`;
 export const GITHUB_API_URL = `https://api.github.com/repos/${GITHUB_REPO}`;
 export const GITHUB_CONTRIBUTORS_URL = `${GITHUB_API_URL}/contributors?per_page=100`;

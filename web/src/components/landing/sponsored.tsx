@@ -8,7 +8,7 @@ import { useI18n } from "@/i18n/provider";
 import { cn } from "@/lib/utils";
 
 const SPONSOR_URL = "https://unikorn.vn/";
-const SPONSOR_INQUIRE = "https://github.com/vudovn";
+const SPONSOR_INQUIRE = "https://github.com/dev-richardnguyen";
 
 export function LandingSponsored() {
   const { t } = useI18n();
@@ -93,7 +93,7 @@ export function LandingSponsored() {
               {copy.talk}
             </a>
             <Link
-              href="https://buymeacoffee.com/vudovn"
+              href="https://buymeacoffee.com/dev_richardnguyen"
               target="_blank"
               rel="noopener noreferrer"
               className={cn(

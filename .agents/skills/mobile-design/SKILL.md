@@ -3,7 +3,7 @@ name: mobile-design
 description: Mobile-first design thinking and decision-making for iOS and Android apps. Touch interaction, performance patterns, platform conventions. Teaches principles, not fixed values. Use when building React Native, Flutter, or native mobile apps.
 when_to_use: "When designing mobile app interfaces for iOS/Android, React Native, or Flutter. Touch interaction and platform conventions. NOT for web apps."
 allowed-tools: Read, Glob, Grep, Bash
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Mobile Design System
@@ -81,12 +81,14 @@ version: 1.0.0
 
 | ❌ NEVER DO | Why It's Wrong | ✅ ALWAYS DO |
 |-------------|----------------|--------------|
-| **ScrollView for long lists** | Renders ALL items, memory explodes | Use `FlatList` / `FlashList` / `ListView.builder` |
+| **ScrollView for long lists** | Renders ALL items, memory explodes | Use `@shopify/flash-list` (recommended) / `FlatList` / `ListView.builder` |
 | **Inline renderItem function** | New function every render, all items re-render | `useCallback` + `React.memo` |
 | **Missing keyExtractor** | Index-based keys cause bugs on reorder | Unique, stable ID from data |
-| **Skip getItemLayout** | Async layout = janky scroll | Provide when items have fixed height |
-| **setState() everywhere** | Unnecessary widget rebuilds | Targeted state, `const` constructors |
-| **Native driver: false** | Animations blocked by JS thread | `useNativeDriver: true` always |
+| **Stock <Image> for remote assets** | No disk cache, main-thread decode jank | Use `expo-image` with cachePolicy, priority, blurhash |
+| **Legacy Animated without native driver** | JS thread bottleneck drops frames | Use `react-native-reanimated` v3 (UI-thread worklets) |
+| **Hardcode notch/nav bar padding** | Breaks on notches, Dynamic Island, edge-to-edge | Use `useSafeAreaInsets()` from `react-native-safe-area-context` |
+| **Skip getItemLayout on FlatList** | Async layout = janky scroll | Provide when items have fixed height, or use `FlashList` |
+| **setState() everywhere** | Unnecessary widget rebuilds | Targeted state, `const` constructors, shared values |
 | **console.log in production** | Blocks JS thread severely | Remove before release build |
 | **Skip React.memo/const** | Every item re-renders on any change | Memoize list items ALWAYS |
 

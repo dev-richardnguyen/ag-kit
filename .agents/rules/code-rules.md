@@ -1,6 +1,6 @@
 ---
 name: code-rules
-version: 1.0.0
+version: 1.1.0
 priority: P0
 trigger: model_decision
 description: Apply when writing, building, refactoring, or fixing code — project-type agent routing, the Socratic Gate, Plan Mode phases, and the final checklist/scripts. Skip for pure questions or text-only responses.
@@ -47,10 +47,10 @@ description: Apply when writing, building, refactoring, or fixing code — proje
 
 ## 🏁 Plan Mode (4-Phase)
 
-1. ANALYSIS → Research, questions
-2. PLANNING → `{task-slug}.md`, task breakdown
-3. SOLUTIONING → Architecture, design (NO CODE!)
-4. IMPLEMENTATION → Code + tests
+1. **ANALYSIS** → Research, codebase inspection (discover existing components, hooks, themes, helper functions), questions
+2. **PLANNING** → `{task-slug}.md`, task breakdown, architecture alignment
+3. **SOLUTIONING** → Architecture, reuse mapping, design (NO CODE!)
+4. **IMPLEMENTATION** → Consistent code + tests (strictly reuse discovered project abstractions)
 
 ---
 

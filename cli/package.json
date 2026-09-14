@@ -1,5 +1,5 @@
 {
-  "name": "@vudovn/ag-kit",
+  "name": "@dev-richardnguyen/ag-kit",
   "version": "2026.8.31",
   "description": "CLI tool to install Antigravity Kit - AI Agent templates",
   "main": "bin/index.js",
@@ -19,11 +19,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vudovn/ag-kit.git"
+    "url": "git+ssh://git@github.com/dev-richardnguyen/ag-kit.git"
   },
   "homepage": "https://ag-kit.unikorn.vn/docs",
   "bugs": {
-    "url": "https://github.com/vudovn/ag-kit/issues"
+    "url": "https://github.com/dev-richardnguyen/ag-kit/issues"
   },
   "keywords": [
     "antigravity",
@@ -33,7 +33,7 @@
     "gemini",
     "skills"
   ],
-  "author": "Do Van Vu",
+  "author": "Richard Nguyen <dev.richard.nguyen@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "chalk": "^5.6.2",

@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/vudovn/ag-kit/main/web/public/images/logo.png" width="128" height="128" alt="AG Kit">
-</p>
-
 <h1 align="center">AG KIT</h1>
 
 <p align="center">
@@ -16,7 +12,7 @@
 
 <p align="center">
   <strong>Runtime production chính: Google Antigravity</strong><br/>
-  <a href="./README.md">English</a> · <a href="./MIGRATION.md">Hướng dẫn migration</a> · <a href="./PRODUCTION_CHECKLIST.md">Checklist production</a> · <a href="./SECURITY.md">Bảo mật</a>
+  <a href="./README.md">English</a> · <a href="./USER_GUIDE-VI.md">Hướng dẫn sử dụng thực tế</a> · <a href="./MIGRATION.md">Hướng dẫn migration</a> · <a href="./PRODUCTION_CHECKLIST.md">Checklist production</a> · <a href="./SECURITY.md">Bảo mật</a>
 </p>
 
 ---
@@ -52,13 +48,13 @@ CLI được publish hiện hỗ trợ Node.js 18 trở lên; bộ kiểm tra An
 ### Cài vào dự án
 
 ```bash
-npx @vudovn/ag-kit init
+npx @dev-richardnguyen/ag-kit init
 ```
 
 Hoặc cài CLI toàn cục:
 
 ```bash
-npm install -g @vudovn/ag-kit
+npm install -g @dev-richardnguyen/ag-kit
 ag-kit init
 ```
 
@@ -229,22 +225,6 @@ AG Kit không yêu cầu auto-merge, auto-deploy hay tự động đồng bộ M
 
 AG Kit là triển khai mã nguồn mở nguyên bản của các mô hình kỹ nghệ agent dựa trên Markdown. Dự án không chứa source file độc quyền. Quyết định tích hợp runtime dựa trên tài liệu và codelab Antigravity công khai được liên kết trong [.agents/hooks/README.md](.agents/hooks/README.md).
 
-## Ủng hộ dự án
-
-<p align="center">
-  <a href="https://buymeacoffee.com/vudovn" target="_blank"><img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me a Coffee" /></a>
-</p>
-
-<p align="center"> - hoặc - </p>
-
-<p align="center">
-  <img src="https://img.vietqr.io/image/mbbank-0779440918-compact.jpg" alt="Ủng hộ dự án qua VietQR" width="200" />
-</p>
-
-<p align="center">
-  <code>CA: Gjpatn3d24dCRhUng7F37K6xJba4R8SDBC18xs1Apump</code>
-</p>
-
 ## Giấy phép
 
-Phát hành theo [MIT License](LICENSE) © [Vudovn](https://github.com/vudovn).
+Phát hành theo [MIT License](LICENSE) © [Richard Nguyen](https://github.com/dev-richardnguyen).

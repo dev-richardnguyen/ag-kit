@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/vudovn/ag-kit/main/web/public/images/logo.png" width="128" height="128" alt="AG Kit">
-</p>
-
 <h1 align="center">AG KIT</h1>
 
 <p align="center">
@@ -16,7 +12,7 @@
 
 <p align="center">
   <strong>Primary runtime: Google Antigravity</strong><br/>
-  <a href="./README-VI.md">Tiếng Việt</a> · <a href="./MIGRATION.md">Migration guide</a> · <a href="./PRODUCTION_CHECKLIST.md">Production checklist</a> · <a href="./SECURITY.md">Security</a>
+  <a href="./README-VI.md">Tiếng Việt</a> · <a href="./USER_GUIDE.md">User Workflow Guide</a> · <a href="./MIGRATION.md">Migration guide</a> · <a href="./PRODUCTION_CHECKLIST.md">Production checklist</a> · <a href="./SECURITY.md">Security</a>
 </p>
 
 ---
@@ -52,13 +48,13 @@ The published CLI currently supports Node.js 18 or newer; the Antigravity integr
 ### Install into a project
 
 ```bash
-npx @vudovn/ag-kit init
+npx @dev-richardnguyen/ag-kit init
 ```
 
 Or install the CLI globally:
 
 ```bash
-npm install -g @vudovn/ag-kit
+npm install -g @dev-richardnguyen/ag-kit
 ag-kit init
 ```
 
@@ -229,22 +225,6 @@ AG Kit never requires automatic merge, automatic deployment, or automatic MCP sy
 
 AG Kit is an original open-source implementation of Markdown-based agent engineering patterns. No proprietary source files are included. Runtime integration decisions are based on public Antigravity documentation and codelabs linked in [.agents/hooks/README.md](.agents/hooks/README.md).
 
-## Support the project
-
-<p align="center">
-  <a href="https://buymeacoffee.com/vudovn" target="_blank"><img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me a Coffee" /></a>
-</p>
-
-<p align="center"> - or - </p>
-
-<p align="center">
-  <img src="https://img.vietqr.io/image/mbbank-0779440918-compact.jpg" alt="Buy me coffee" width="200" />
-</p>
-
-<p align="center">
-  <code>CA: Gjpatn3d24dCRhUng7F37K6xJba4R8SDBC18xs1Apump</code>
-</p>
-
 ## License
 
-Released under the [MIT License](LICENSE) © [Vudovn](https://github.com/vudovn).
+Released under the [MIT License](LICENSE) © [Richard Nguyen](https://github.com/dev-richardnguyen).

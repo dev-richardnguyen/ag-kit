@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Dialog, DialogClose, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 
-const X_URL = 'https://x.com/vudovn354';
+const X_URL = 'https://x.com/dev-richardnguyen';
 
 const XIcon = ({ className }: { className?: string }) => (
     <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">
@@ -52,7 +52,7 @@ export default function FollowDialog() {
                             <XIcon className="w-5 h-5 text-primary-foreground" />
                         </div>
                         <div className="flex-1">
-                            <div className="font-semibold text-foreground mb-0.5">@vudovn354</div>
+                            <div className="font-semibold text-foreground mb-0.5">@dev-richardnguyen</div>
                             <div className="text-sm text-muted-foreground">Follow on X (Twitter)</div>
                         </div>
                         <svg className="w-5 h-5 text-muted-foreground group-hover:text-foreground transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">

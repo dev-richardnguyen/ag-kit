@@ -1,6 +1,6 @@
 ---
 name: core-protocol
-version: 1.0.0
+version: 1.1.0
 priority: P0
 trigger: always_on
 ---
@@ -42,13 +42,17 @@ Agent activated → Check frontmatter "skills:" → Read SKILL.md (INDEX) → Re
 
 ---
 
-## 📁 File Dependency Awareness
+## 📁 File Dependency & Existing Codebase Reconnaissance
 
-**Before modifying ANY file:**
+**Before modifying or adding ANY file, you MUST:**
 
-1. If `CODEBASE.md` exists, check its File Dependencies section.
-2. Otherwise, discover dependencies with targeted search/import analysis; do not block waiting for a missing file.
-3. Identify dependent files and update all affected files together.
+1. **Reconnaissance First**: Inspect the active project to understand its current architecture, directory layout, and conventions.
+2. **Component & Utility Discovery**: Actively search for existing components, hooks, themes/design tokens, and helper functions.
+3. **Strict Reuse**: Always reuse and extend existing abstractions. Never create duplicate helpers or unaligned components.
+4. **Dependency Tracing**:
+   - If `CODEBASE.md` exists, check its File Dependencies section.
+   - Otherwise, discover dependencies with targeted search/import analysis; do not block waiting for a missing file.
+   - Identify dependent files and update all affected files together.
 
 ---
 

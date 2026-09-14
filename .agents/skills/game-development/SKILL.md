@@ -3,7 +3,7 @@ name: game-development
 description: Game development orchestrator. Routes to platform-specific skills based on project needs.
 when_to_use: "When building games with Unity, Godot, Unreal, Phaser, or any game engine. Routes to platform-specific sub-skills."
 allowed-tools: Read, Write, Edit, Glob, Grep, Bash
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Game Development
@@ -24,8 +24,9 @@ You are working on a game development project. This skill teaches the PRINCIPLES
 
 | If the game targets... | Use Sub-Skill |
 |------------------------|---------------|
-| Web browsers (HTML5, WebGL) | `game-development/web-games` |
-| Mobile (iOS, Android) | `game-development/mobile-games` |
+| Web browsers (HTML5, WebGL, WebGPU) | `game-development/web-games` |
+| Mobile Native (iOS, Android via Unity/Godot) | `game-development/mobile-games` |
+| Mobile App (React Native Skia, Expo GL, R3F) | `game-development/mobile-games` + `mobile-design` |
 | PC (Steam, Desktop) | `game-development/pc-games` |
 | VR/AR headsets | `game-development/vr-ar` |
 
@@ -136,15 +137,17 @@ Abstract input into ACTIONS, not raw keys:
 
 ---
 
-## Anti-Patterns (Universal)
+## 🚫 Anti-Patterns (Universal Banned List)
 
-| Don't | Do |
-|-------|-----|
-| Update everything every frame | Use events, dirty flags |
-| Create objects in hot loops | Object pooling |
-| Cache nothing | Cache references |
-| Optimize without profiling | Profile first |
-| Mix input with logic | Abstract input layer |
+| ❌ NEVER DO | Why It Breaks The Game | ✅ ALWAYS DO |
+|-------------|------------------------|--------------|
+| **Allocate in hot loops (`update`/`render`)** | `new Vector()`, closures trigger frequent GC pauses → stutter | Object pooling, scratch variables |
+| **Drive 60fps loop with UI framework state** | React `useState` triggers component re-renders at 60Hz → frame collapse | Mutable game state, Canvas/WebGL direct refs |
+| **Instantiate new audio instances on shoot** | High latency, audio thread starvation, memory leak | Preload audio and reuse via Sound Pool |
+| **Uncompressed textures in VRAM** | Mobile devices crash from Out-Of-Memory (OOM) | KTX2, Basis Universal, or sprite atlases |
+| **Update everything every frame** | Wasted CPU cycles on static elements | Use dirty flags, event listeners |
+| **Optimize without profiling** | Fixing non-issues while real bottlenecks remain | Profile with CPU/GPU profilers first |
+| **Mix input directly with game logic** | Breaks multi-platform controls and keybinding | Abstract input layer (Action Map) |
 
 ---
 

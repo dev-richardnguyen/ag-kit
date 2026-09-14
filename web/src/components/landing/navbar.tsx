@@ -20,7 +20,7 @@ import { cn } from "@/lib/utils";
 import { GITHUB_REPO_URL } from "@/lib/github";
 import { useI18n } from "@/i18n/provider";
 
-const X_URL = "https://x.com/vudovn354";
+const X_URL = "https://x.com/dev-richardnguyen";
 
 const XIcon = ({ className }: { className?: string }) => (
   <svg
@@ -124,7 +124,7 @@ export function LandingNavbar() {
                   href={X_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="X / Twitter @vudovn354"
+                  aria-label="X / Twitter @dev-richardnguyen"
                   className={cn(buttonVariants({ variant: "ghost", size: "icon" }))}
                 >
                   <XIcon className="size-4" />
@@ -169,7 +169,7 @@ export function LandingNavbar() {
           href={X_URL}
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="X / Twitter @vudovn354"
+          aria-label="X / Twitter @dev-richardnguyen"
           className={cn(buttonVariants({ variant: "ghost", size: "icon" }))}
         >
           <XIcon className="size-4" />

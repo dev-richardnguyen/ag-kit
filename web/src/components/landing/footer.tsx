@@ -73,7 +73,7 @@ export function LandingFooter() {
           <div className="flex flex-col gap-2">
             <h3 className="text-lg font-bold">{f.community}</h3>
             <a
-              href="https://github.com/vudovn/ag-kit"
+              href="https://github.com/dev-richardnguyen/ag-kit"
               target="_blank"
               rel="noopener noreferrer"
               className="opacity-75 hover:opacity-100"
@@ -81,7 +81,7 @@ export function LandingFooter() {
               {f.github}
             </a>
             <a
-              href="https://github.com/vudovn/ag-kit/issues"
+              href="https://github.com/dev-richardnguyen/ag-kit/issues"
               target="_blank"
               rel="noopener noreferrer"
               className="opacity-75 hover:opacity-100"
@@ -89,7 +89,7 @@ export function LandingFooter() {
               {f.issues}
             </a>
             <a
-              href="https://github.com/vudovn/ag-kit/discussions"
+              href="https://github.com/dev-richardnguyen/ag-kit/discussions"
               target="_blank"
               rel="noopener noreferrer"
               className="opacity-75 hover:opacity-100"
@@ -101,7 +101,7 @@ export function LandingFooter() {
           <div className="flex flex-col gap-2">
             <h3 className="text-lg font-bold">{f.legal}</h3>
             <a
-              href="https://github.com/vudovn/ag-kit/blob/main/LICENSE"
+              href="https://github.com/dev-richardnguyen/ag-kit/blob/main/LICENSE"
               target="_blank"
               rel="noopener noreferrer"
               className="opacity-75 hover:opacity-100"
@@ -109,7 +109,7 @@ export function LandingFooter() {
               {f.license}
             </a>
             <a
-              href="https://github.com/vudovn/ag-kit/blob/main/SECURITY.md"
+              href="https://github.com/dev-richardnguyen/ag-kit/blob/main/SECURITY.md"
               target="_blank"
               rel="noopener noreferrer"
               className="opacity-75 hover:opacity-100"
@@ -124,12 +124,12 @@ export function LandingFooter() {
         <p className="text-sm text-muted-foreground">
           &copy; {new Date().getFullYear()} AG Kit by{" "}
           <a
-            href="https://github.com/vudovn"
+            href="https://github.com/dev-richardnguyen"
             target="_blank"
             rel="noopener noreferrer"
             className="text-foreground transition-colors hover:text-brand"
           >
-            @vudovn
+            @dev-richardnguyen
           </a>
           . {f.credit}{" "}
           <a
