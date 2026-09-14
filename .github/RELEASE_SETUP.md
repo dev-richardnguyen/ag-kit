@@ -16,7 +16,7 @@ Dismiss stale approvals after new commits. Block force pushes and branch deletio
 
 ## npm Trusted Publishing
 
-1. In npm package settings for `@vudovn/ag-kit`, configure GitHub Actions as a trusted publisher.
+1. In npm package settings for `@dev-richardnguyen/ag-kit`, configure GitHub Actions as a trusted publisher.
 2. Set the repository and workflow to `.github/workflows/publish.yml`.
 3. Create a GitHub Environment named `npm` and require approval when appropriate.
 4. Remove any legacy `NPM_TOKEN` secret after a successful OIDC release.
