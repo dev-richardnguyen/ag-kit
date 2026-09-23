@@ -1,5 +1,20 @@
 [
     {
+        "version": "2026.9.23",
+        "date": "2026-09-23",
+        "summary": "Release 2026.9.23: enforce docs-ref/ isolation protocol for all agent generated documentation, brand migration to camilyos, and safe publish alignment.",
+        "changes": {
+            "Added": [
+                "Enforced docs-ref/* root clutter prevention protocol across all agents, rules, and workflows.",
+                "Added bilingual documentation and user guides (USER_GUIDE.md, USER_GUIDE-VI.md)."
+            ],
+            "Changed": [
+                "Advanced toolkit version to 2026.9.23 across all packages.",
+                "Migrated scope to @camilyos/ag-kit and dev-richardnguyen repository."
+            ]
+        }
+    },
+    {
         "version": "2026.8.31",
         "date": "2026-08-31",
         "summary": "Release 2026.8.31: upgrades app-builder with mandatory DESIGN.md gatekeeper, AI SDK/Chatbot patterns, Game developer routing, and template consistency.",

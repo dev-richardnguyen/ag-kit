@@ -86,7 +86,7 @@ const jsonLd = {
         "Modular AI agent engineering kit for Google Antigravity and modern coding assistants. Includes 20 specialist agents, 47 skills, 13 workflows, and a safe-merge CLI.",
       "url": "https://ag-kit.unikorn.vn/",
       "downloadUrl": "https://www.npmjs.com/package/@camilyos/ag-kit",
-      "softwareVersion": "2026.8.31",
+      "softwareVersion": "2026.9.23",
       "author": {
         "@type": "Person",
         "name": "Richard Nguyen",

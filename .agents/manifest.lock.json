@@ -4,7 +4,7 @@
     "ARCHITECTURE.md": "d76626492126b02b5562ec8a88bc9fcc5401932c252ede64415c98a1805fa392",
     "CHANGELOG.md": "c29cb325d278be44ad662d91c86c180cf01c05d008f77cf4b3f0bd42de8c46f8",
     "README.md": "d6a29fbc3367f5ab5739f84bad71710879119d1b697b6a18943dcdad5e2ec654",
-    "VERSION": "94bc11e2a5617c66e6d2f849e14be6579c44c90d0f985d80ce4dc96dff46fa94",
+    "VERSION": "4bb1980c0a29531f1764317358ef0f7b8879af1303bb3006cf8533b5e4f14497",
     "agent/backend-specialist.md": "65087ad56011ce55231f2754c3bdbb1c32ee14fa24ae9f389c0a7a67c178f1fd",
     "agent/code-archaeologist.md": "a0c654b885773c425f6a1c3f35ac7a1d509ed32e08a4e2daf373ddc5c6c805f3",
     "agent/database-architect.md": "1649c5ba554eca2674df75c50229cc00463aed1400d3b6d55131d8f4b12f3c76",
@@ -220,7 +220,7 @@
     "workflows/test.md": "bd06ae644376e3cc2661f1a623504247445c86a83dfb0df92ed5f0eccdef60ea",
     "workflows/verify.md": "2dc26bcbe24c7e71571953da75629521ea3d7a0a444a7101e3601b39864971fc"
   },
-  "kitVersion": "2026.8.31",
-  "manifestSha256": "fa7a0656725fe27ed4e3aecf8687e6afb5873c77b23d78185fc4bf1cff5cf8ab",
+  "kitVersion": "2026.9.23",
+  "manifestSha256": "e0c602f9ae5b37540a1538f082842ce551b30bba42941233df23ba40a620a6af",
   "schemaVersion": "1.0.0"
 }
