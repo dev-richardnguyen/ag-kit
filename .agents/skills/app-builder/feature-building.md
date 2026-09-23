@@ -25,8 +25,8 @@ Analysis:
 
 ```
 1. Analyze existing project & architecture
-2. Create change plan ({task-slug}.md)
-3. If UI modified/added: check & align with DESIGN.md
+2. Create change plan (docs-ref/{task-slug}.md)
+3. If UI modified/added: check & align with docs-ref/DESIGN.md
 4. Present plan to user & get approval
 5. Apply changes with specialist agents
 6. Test & validate (lint, typecheck, unit tests)

@@ -136,3 +136,5 @@ Quy trình gỡ lỗi có kỷ luật **Systematic Debugging (4 giai đoạn)** 
    - Luôn sử dụng `/enhance` hoặc `/plan`. Dành 30 giây đọc lướt `implementation_plan.md` của AI trước khi bấm **Proceed**.
 3. **Luôn tận dụng `/remember`**:
    - Khi bạn muốn AI luôn tuân thủ một quy ước nào đó trong các phiên làm việc sau (ví dụ: thư viện state, cách đặt tên biến, convention API), hãy dùng `/remember`.
+4. **Tài liệu & Kế hoạch luôn lưu trong `docs-ref/*`**:
+   - Mọi tài liệu, kế hoạch (`{task-slug}.md`), thông số thiết kế (`DESIGN.md`), tài liệu kiến trúc do AI tạo ra đều bắt buộc được lưu gọn gàng trong thư mục `docs-ref/*`, giữ thư mục gốc (root) luôn sạch sẽ.

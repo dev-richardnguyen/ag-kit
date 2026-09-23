@@ -20,7 +20,7 @@ version: 1.0.0
 
 ## When to produce a DESIGN.md
 
-This is a **hard gate** for UI work (see `.agents/rules/design-rules.md`): before writing components, pages, or styles, a `DESIGN.md` must exist at the project root. If absent, create it first from the brief; if present, read it and conform.
+This is a **hard gate** for UI work (see `.agents/rules/design-rules.md`): before writing components, pages, or styles, a `DESIGN.md` must exist in `docs-ref/` (or project root for legacy projects). If absent, create `docs-ref/DESIGN.md` first from the brief; if present, read it and conform.
 
 The token block converts cleanly to/from `tokens.json`, Figma variables, and Tailwind theme config — so it is the bridge between design intent and code.
 
@@ -180,6 +180,6 @@ Accessibility-first: high contrast, generous touch targets.
 
 1. Read the brief and infer the design direction (see `frontend-design` / `mobile-design`).
 2. **ALWAYS read [collection.md](collection.md) first** — 70+ real-world DESIGN.md files. Find the 1–2 closest in vibe/industry to the brief, open their `DESIGN.md` on GitHub, and study how they structure tokens. Adapt, never blindly copy.
-3. **Write `DESIGN.md` at the project root** — tokens first, then rationale prose.
+3. **Write `DESIGN.md` under `docs-ref/DESIGN.md`** (ensure `docs-ref/` exists, never at project root) — tokens first, then rationale prose.
 4. Build UI strictly against the tokens. Descriptive names in prose must map to token names.
-5. Keep DESIGN.md in sync when the visual language changes — it stays the source of truth.
+5. Keep `docs-ref/DESIGN.md` in sync when the visual language changes — it stays the source of truth.

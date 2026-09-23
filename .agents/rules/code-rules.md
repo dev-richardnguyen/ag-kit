@@ -48,7 +48,7 @@ description: Apply when writing, building, refactoring, or fixing code — proje
 ## 🏁 Plan Mode (4-Phase)
 
 1. **ANALYSIS** → Research, codebase inspection (discover existing components, hooks, themes, helper functions), questions
-2. **PLANNING** → `{task-slug}.md`, task breakdown, architecture alignment
+2. **PLANNING** → `docs-ref/{task-slug}.md` (never at root), task breakdown, architecture alignment
 3. **SOLUTIONING** → Architecture, reuse mapping, design (NO CODE!)
 4. **IMPLEMENTATION** → Consistent code + tests (strictly reuse discovered project abstractions)
 

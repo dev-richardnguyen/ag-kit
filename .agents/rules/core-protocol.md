@@ -56,6 +56,16 @@ Agent activated → Check frontmatter "skills:" → Read SKILL.md (INDEX) → Re
 
 ---
 
+## 📂 Documentation & Plan Location Protocol (`docs-ref/*`)
+
+**All agent-generated documentation, plans, design specifications, and analysis files MUST be saved in `docs-ref/*`:**
+- **Plans & Tasks**: `docs-ref/{task-slug}.md`
+- **Design Specs**: `docs-ref/DESIGN.md`
+- **Architecture & Research**: `docs-ref/architecture/`, `docs-ref/research/`
+- **Never at project root**: Do not clutter the project root with agent markdown or text files. Ensure `docs-ref/` is created if it does not yet exist.
+
+---
+
 ## 🗺️ System Map & Memory Read
 
 > 🔴 **MANDATORY:** At session start, you MUST read `.agents/memory/MEMORY.md` to load persistent project conventions, user preferences, and decisions.

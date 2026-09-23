@@ -20,9 +20,9 @@ trigger: always_on
 | **QUESTION**     | "what is", "how does", "explain"           | TIER 0 only                    | Text Response               |
 | **SURVEY/INTEL** | "analyze", "list files", "overview"        | TIER 0 + Explorer              | Session Intel (No File)     |
 | **SIMPLE CODE**  | "fix", "add", "change" (single file)       | TIER 0 + TIER 1 (lite)         | Inline Edit                 |
-| **COMPLEX CODE** | "build", "create", "implement", "refactor" | TIER 0 + TIER 1 (full) + Agent | **{task-slug}.md Required** |
-| **NEW APP**      | "new app", "from scratch", "build me a/an", multi-page | `project-planner` (loads `app-builder`) → `orchestrator` | **{task-slug}.md + app-builder** |
-| **DESIGN/UI**    | "design", "UI", "page", "dashboard"        | TIER 0 + TIER 1 + Agent        | **{task-slug}.md Required** |
+| **COMPLEX CODE** | "build", "create", "implement", "refactor" | TIER 0 + TIER 1 (full) + Agent | **docs-ref/{task-slug}.md Required** |
+| **NEW APP**      | "new app", "from scratch", "build me a/an", multi-page | `project-planner` (loads `app-builder`) → `orchestrator` | **docs-ref/{task-slug}.md + app-builder** |
+| **DESIGN/UI**    | "design", "UI", "page", "dashboard"        | TIER 0 + TIER 1 + Agent        | **docs-ref/{task-slug}.md Required** |
 | **SLASH CMD**    | /create, /orchestrate, /debug              | Command-specific flow          | Variable                    |
 
 > 🔴 **NEW APP / scaffold from scratch:** route through `project-planner` or `orchestrator` (both load `app-builder`), NOT a lone specialist like `frontend-specialist`. A specialist alone has no project-detection, tech-stack selection, or template knowledge — `app-builder` does. Or run `/create`.
@@ -86,9 +86,9 @@ When auto-applying an agent, inform the user:
 | -------- | ----------------- | -------------------------------------------- |
 | **plan** | `project-planner` | 4-phase methodology. NO CODE before Phase 4. |
 | **ask**  | -                 | Focus on understanding. Ask questions.       |
-| **edit** | `orchestrator`    | Execute. Check `{task-slug}.md` first.       |
+| **edit** | `orchestrator`    | Execute. Check `docs-ref/{task-slug}.md` first. |
 
-> 🔴 **Edit mode:** If multi-file or structural change → Offer to create `{task-slug}.md`. For single-file fixes → Proceed directly.
-> Full Plan Mode (4-Phase) protocol lives in `code-rules.md`.
+> 🔴 **Edit mode:** If multi-file or structural change → Offer to create `docs-ref/{task-slug}.md`. For single-file fixes → Proceed directly.
+> Full Plan Mode (4-Phase) protocol lives in `code-rules.md`. All documentation & plans must reside in `docs-ref/*` (never root).
 
 ---

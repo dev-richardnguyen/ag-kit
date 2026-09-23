@@ -30,18 +30,18 @@ Use the `project-planner` agent with this context:
 CONTEXT:
 - User Request: $ARGUMENTS
 - Mode: PLANNING ONLY (no code)
-- Output: {task-slug}.md in project root (dynamic naming)
+- Output: docs-ref/{task-slug}.md (dynamic naming)
 
 NAMING RULES:
 1. Extract 2-3 key words from request
 2. Lowercase, hyphen-separated
 3. Max 30 characters
-4. Example: "e-commerce cart" → ecommerce-cart.md
+4. Example: "e-commerce cart" → docs-ref/ecommerce-cart.md
 
 RULES:
 1. Follow project-planner.md Phase -1 (Context Check)
 2. Follow project-planner.md Phase 0 (Socratic Gate)
-3. Create {slug}.md with task breakdown
+3. Create docs-ref/{slug}.md with task breakdown (ensure docs-ref/ exists)
 4. DO NOT write any code files
 5. REPORT the exact file name created
 ```
@@ -52,7 +52,7 @@ RULES:
 
 | Deliverable | Location |
 |-------------|----------|
-| Project Plan | `{task-slug}.md` in project root |
+| Project Plan | `docs-ref/{task-slug}.md` |
 | Task Breakdown | Inside plan file |
 | Agent Assignments | Inside plan file |
 | Verification Checklist | Phase X in plan file |

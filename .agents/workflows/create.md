@@ -27,10 +27,10 @@ This command starts a new application creation process.
    - Use `project-planner` agent for task breakdown
    - Determine tech stack
    - Plan file structure
-   - Create the `{task-slug}.md` plan file in the project root, then proceed to building
+   - Create the `docs-ref/{task-slug}.md` plan file (ensure `docs-ref/` exists), then proceed to building
 
 3. **Design Source-of-Truth (UI projects only)**
-   - If the app has a UI, create `DESIGN.md` at the project root BEFORE building UI — follow the `design-spec` skill (read `collection.md` for real-world references first).
+   - If the app has a UI, create `docs-ref/DESIGN.md` BEFORE building UI — follow the `design-spec` skill (read `collection.md` for real-world references first). Never save at project root.
    - Skip only for headless/CLI/API-only projects.
 
 4. **Application Building (After Approval)**
